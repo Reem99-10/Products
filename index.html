@@ -3,171 +3,120 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>متجرنا الحرفي</title>
+    <title>متجري الحرفي</title>
     <style>
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f6f2eb;
+            font-family: Tahoma, sans-serif;
+            background-color: #f7f4f0;
+            color: #4a3b32;
             margin: 0;
             padding: 0;
-            color: #4a3525;
+            text-align: right;
         }
         header {
-            background-color: #543828;
-            color: #ffffff;
-            text-align: center;
-            padding: 40px 20px;
+            background-color: #fff;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #e6dfd5;
         }
-        header h1 {
-            margin: 0 0 12px;
-            font-size: 28px;
-        }
-        header p {
-            margin: 0;
-            font-size: 16px;
-            color: #e8dfd5;
-        }
-        nav {
-            background-color: #e6ddd0;
-            text-align: center;
-            padding: 15px;
+        nav a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #4a3b32;
             font-weight: bold;
-            font-size: 16px;
-            border-bottom: 1px solid #d8cdc0;
         }
-        nav span {
-            margin: 0 15px;
-            cursor: pointer;
-        }
-        .section-header {
-            text-align: center;
-            padding: 35px 20px 20px;
-        }
-        .section-header h2 {
-            font-size: 26px;
-            margin: 0 0 10px;
-        }
-        .section-header p {
-            color: #7a6352;
-            margin: 0;
-            font-size: 15px;
-        }
-        .products-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-            gap: 20px;
-            max-width: 1000px;
-            margin: 0 auto 40px;
+        .container {
+            max-width: 800px;
+            margin: 30px auto;
             padding: 0 20px;
         }
-        .product-card {
-            background: #ffffff;
-            border-radius: 16px;
-            box-shadow: 0 4px 12px rgba(84, 56, 40, 0.08);
-            padding: 20px;
+        h1 {
             text-align: center;
-            border: 1px solid #ede6dc;
+            color: #5c4033;
         }
-        .image-box {
-            background-color: #efe7dc;
+        .subtitle {
+            text-align: center;
+            color: #8c7365;
+            margin-bottom: 40px;
+        }
+        .product-card {
+            background: #fff;
             border-radius: 12px;
-            padding: 10px;
-            margin-bottom: 18px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 180px;
-            overflow: hidden;
+            padding: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+            text-align: center;
         }
-        .image-box img {
+        .product-card img {
             width: 100%;
-            height: 100%;
+            max-height: 350px;
             object-fit: cover;
             border-radius: 8px;
         }
-        .product-title {
-            font-size: 20px;
+        .product-card h3 {
+            margin-top: 15px;
+            color: #4a3b32;
+        }
+        .price {
+            font-size: 1.2em;
             font-weight: bold;
-            margin: 0 0 8px;
-            color: #4a3525;
+            color: #5c4033;
+            margin: 10px 0;
         }
-        .product-desc {
-            font-size: 14px;
-            color: #7a6352;
-            margin: 0 0 12px;
-        }
-        .product-price {
-            font-size: 17px;
-            font-weight: bold;
-            color: #543828;
-            margin-bottom: 18px;
-        }
-        .add-btn {
-            background-color: #543828;
-            color: #ffffff;
+        .btn {
+            background-color: #5c4033;
+            color: white;
             border: none;
-            padding: 12px 30px;
-            border-radius: 10px;
-            font-size: 15px;
-            font-weight: bold;
+            padding: 10px 25px;
+            border-radius: 6px;
             cursor: pointer;
-            width: 80%;
+            font-size: 1em;
         }
-        .add-btn:hover {
-            background-color: #3e281c;
+        .btn:hover {
+            background-color: #4a3b32;
         }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>كل قطعة تحكي حكاية</h1>
-        <p>منتجات حرفية صنعت بحب وإبداع</p>
+        <nav>
+            <a href="#">الرئيسية</a>
+        </nav>
+        <div>سلة التسوق 🛒</div>
     </header>
 
-    <nav>
-        <span>الرئيسية</span>
-        <span>سلة التسوق 🛒</span>
-    </nav>
+    <div class="container">
+        <h1>منتجاتنا الحرفية</h1>
+        <p class="subtitle">اختاري قطعتك المفضلة وأضيفيها إلى سلة التسوق.</p>
 
-    <div class="section-header">
-        <h2>منتجاتنا الحرفية</h2>
-        <p>اختاري قطعتك المفضلة وأضيفيها إلى سلة التسوق.</p>
-    </div>
-
-    <div class="products-grid">
-        
-        <!-- المنتج الأول -->
+        <!-- المنتج الأول: حقيبة الكروشيه -->
         <div class="product-card">
-            <div class="image-box">
-                <img src="craft1.jpg.JPG" alt="حقيبة كروشيه">
-            </div>
-            <div class="product-title">حقيبة كروشيه وحامل كاميرا</div>
-            <div class="product-desc">مصنوعة بعناية فائقة وتفاصيل أنيقة.</div>
-            <div class="product-price">250 ريال</div>
-            <button class="add-btn">أضيفي إلى السلة</button>
+            <img src="crochet-bag.jpg" alt="حقيبة كروشيه">
+            <h3>حقيبة كروشيه وحامل كاميرا</h3>
+            <p>مصنوعة بعناية فائقة وتفاصيل أنيقة.</p>
+            <div class="price">250 ريال</div>
+            <button class="btn">أضيفي إلى السلة</button>
         </div>
 
-        <!-- المنتج الثاني -->
+        <!-- المنتج الثاني: قطعة التطريز -->
         <div class="product-card">
-            <div class="image-box">
-                <img src="craft2.jpg.JPG" alt="قطعة تطريز">
-            </div>
-            <div class="product-title">قطعة تطريز باليرينا</div>
-            <div class="product-desc">تصميم فني فريد وناعم.</div>
-            <div class="product-price">215 ريال</div>
-            <button class="add-btn">أضيفي إلى السلة</button>
+            <img src="embroidery.jpg" alt="قطعة تطريز بالييرينا">
+            <h3>قطعة تطريز بالييرينا</h3>
+            <p>تصميم فني فريد وناعم.</p>
+            <div class="price">215 ريال</div>
+            <button class="btn">أضيفي إلى السلة</button>
         </div>
 
-        <!-- المنتج الثالث -->
+        <!-- المنتج الثالث: أكواب الفخار -->
         <div class="product-card">
-            <div class="image-box">
-                <img src="craft3.jpg.JPG" alt="أكواب فخار">
-            </div>
-            <div class="product-title">أكواب فخار مصنوعة يدوياً</div>
-            <div class="product-desc">إبداع أصيل يزين جلستك بلمسة دافئة.</div>
-            <div class="product-price">150 ريال</div>
-            <button class="add-btn">أضيفي إلى السلة</button>
+            <img src="pottery-cup.jpg" alt="أكواب فخار">
+            <h3>أكواب فخار مصنوعة يدويّاً</h3>
+            <p>إبداع أصيل يزين جلستك بلمسة دافئة.</p>
+            <div class="price">150 ريال</div>
+            <button class="btn">أضيفي إلى السلة</button>
         </div>
 
     </div>
