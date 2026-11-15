@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
@@ -72,17 +71,19 @@
         .image-box {
             background-color: #efe7dc;
             border-radius: 12px;
-            padding: 20px;
+            padding: 10px;
             margin-bottom: 18px;
             display: flex;
             align-items: center;
             justify-content: center;
             height: 180px;
+            overflow: hidden;
         }
         .image-box img {
-            max-width: 100%;
-            max-height: 160px;
-            object-fit: contain;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 8px;
         }
         .product-title {
             font-size: 20px;
@@ -123,3 +124,53 @@
         <h1>كل قطعة تحكي حكاية</h1>
         <p>منتجات حرفية صنعت بحب وإبداع</p>
     </header>
+
+    <nav>
+        <span>الرئيسية</span>
+        <span>سلة التسوق 🛒</span>
+    </nav>
+
+    <div class="section-header">
+        <h2>منتجاتنا الحرفية</h2>
+        <p>اختاري قطعتك المفضلة وأضيفيها إلى سلة التسوق.</p>
+    </div>
+
+    <div class="products-grid">
+        
+        <!-- المنتج الأول -->
+        <div class="product-card">
+            <div class="image-box">
+                <img src="craft1.jpg.JPG" alt="حقيبة كروشيه">
+            </div>
+            <div class="product-title">حقيبة كروشيه وحامل كاميرا</div>
+            <div class="product-desc">مصنوعة بعناية فائقة وتفاصيل أنيقة.</div>
+            <div class="product-price">250 ريال</div>
+            <button class="add-btn">أضيفي إلى السلة</button>
+        </div>
+
+        <!-- المنتج الثاني -->
+        <div class="product-card">
+            <div class="image-box">
+                <img src="craft2.jpg.JPG" alt="قطعة تطريز">
+            </div>
+            <div class="product-title">قطعة تطريز باليرينا</div>
+            <div class="product-desc">تصميم فني فريد وناعم.</div>
+            <div class="product-price">215 ريال</div>
+            <button class="add-btn">أضيفي إلى السلة</button>
+        </div>
+
+        <!-- المنتج الثالث -->
+        <div class="product-card">
+            <div class="image-box">
+                <img src="craft3.jpg.JPG" alt="أكواب فخار">
+            </div>
+            <div class="product-title">أكواب فخار مصنوعة يدوياً</div>
+            <div class="product-desc">إبداع أصيل يزين جلستك بلمسة دافئة.</div>
+            <div class="product-price">150 ريال</div>
+            <button class="add-btn">أضيفي إلى السلة</button>
+        </div>
+
+    </div>
+
+</body>
+</html>
